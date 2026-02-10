@@ -1,0 +1,34 @@
+module two_state_demo;
+  bit b;        
+  bit [3:0]  b_vec;    
+  byte       by;       
+  shortint   si;       
+  int        i;        
+  longint    li;      
+ initial begin
+    b = 1;
+    b_vec = 4'b1010;
+    by = -8;
+    si = 1234;
+    i = -100;
+    li = 64'd100000;
+    $display("bit b = %0b", b);
+    $display("bit [3:0]  b_vec = %0b", b_vec);
+    $display("byte by = %0d", by);
+    $display("shortint si = %0d", si);
+    $display("int i = %0d", i);
+    $display("longint li = %0d", li);
+    $finish;
+  end
+endmodule
+
+
+//OUTPUT//
+xcelium> run
+bit b = 1
+bit [3:0]  b_vec = 1010
+byte by = -8
+shortint si = 1234
+int i = -100
+longint li = 100000
+
