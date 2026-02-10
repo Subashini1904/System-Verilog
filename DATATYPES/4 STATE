@@ -7,23 +7,23 @@ time t;
 real r_val;         
   assign w = 4'b10xz;
   initial begin
-    r     = 4'b1x0z;     
-    l     = 4'b101x;
-    i     = -25;
-    t     = $time;
+    r = 4'b1x0z;     
+    l = 4'b101x;
+    i = -25;
+    t = $time;
     r_val = 3.14;
     #10;                
     t = $time;
-    $display("reg     r     = %b", r);
-    $display("wire    w     = %b", w);
-    $display("logic   l     = %b", l);
-    $display("integer i     = %0d", i);
-    $display("time    t     = %0t", t);
-    $display("real    r_val = %0f", r_val);
+    $display("reg r= %b", r);
+    $display("wire w= %b", w);
+    $display("logic l= %b", l);
+    $display("integer i= %0d", i);
+    $display("time t= %0t", t);
+    $display("real r_val= %0f", r_val);
     $finish;
   end
-
 endmodule
+
 
 //OUTPUT//
 xcelium> run
