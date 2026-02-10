@@ -1,0 +1,18 @@
+module unbounded_queue;
+ int q[$];   
+ initial begin
+    q.push_back(10);
+    q.push_back(20);
+    q.push_back(30);
+    q.pop_front();
+    foreach (q[i])
+      $display("q[%0d] = %0d", i, q[i]);
+    $finish;
+  end
+endmodule
+
+
+//OUTPUT//
+xcelium> run
+q[0] = 20
+q[1] = 30
