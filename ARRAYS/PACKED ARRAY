@@ -1,4 +1,4 @@
-module packed_array_demo;
+module packed_array;
   logic [7:0] data;  
   initial begin
     data = 8'b1010_1100;
