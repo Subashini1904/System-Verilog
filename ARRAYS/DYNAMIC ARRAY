@@ -1,0 +1,24 @@
+module dynamic_array;
+  int arr[];  
+  int i;
+  initial begin
+    arr = new[5];
+    for (i = 0; i < 5; i++) begin
+      arr[i] = i;
+    end
+    for (i = 0; i < 5; i++) begin
+      $display("arr[%0d] = %0d", i, arr[i]);
+    end
+
+    $finish;
+  end
+endmodule
+
+
+//OUTPUT//
+xcelium> run
+arr[0] = 0
+arr[1] = 1
+arr[2] = 2
+arr[3] = 3
+arr[4] = 4
