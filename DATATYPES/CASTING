@@ -1,0 +1,21 @@
+module static_cast_demo;
+  real r;     
+  int  i;     
+  byte b;     
+  initial begin
+    r = 12.75;
+    i = int'(r);   
+    b = byte'(i);  
+    $display("real r= %0f", r);
+    $display("int i= %0d", i);
+    $display("byte b = %0d", b);
+    $finish;
+  end
+endmodule
+
+
+//OUTPUT//
+xcelium> run
+real r = 12.750000
+int  i = 13
+byte b = 13
