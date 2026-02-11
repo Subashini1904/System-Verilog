@@ -1,0 +1,17 @@
+module unpacked_struct;
+  struct {
+    bit[3:0] a;
+    bit[3:0] b;
+  } data;
+  initial begin
+    data.a=4'b1010;
+    data.b=4'b1100;
+    $display("a= %b", data.a);
+    $display("b= %b", data.b);
+  end
+endmodule
+
+//OUTPUT//
+xcelium> run
+a = 1010
+b = 1100
