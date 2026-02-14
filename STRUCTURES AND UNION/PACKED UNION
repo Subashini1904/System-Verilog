@@ -1,0 +1,21 @@
+module packed_union_example;
+  union packed {
+    bit [7:0] byte_data;        
+    bit [1:0][3:0] nibble;      
+  } data;
+
+  initial begin
+    data.byte_data = 8'b10101100;
+    $display("byte_data = %b", data.byte_data);
+    $display("nibble[0] = %b", data.nibble[0]);
+    $display("nibble[1] = %b", data.nibble[1]);
+  end
+
+endmodule
+
+
+//OUTPUT//
+xcelium> run
+byte_data = 10101100
+nibble[0]  = 1100
+nibble[1]  = 1010
