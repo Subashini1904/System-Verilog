@@ -1,0 +1,18 @@
+module unpacked_union;
+  union {
+    int a;
+    byte b;
+  } data;
+  initial begin
+    data.a = 32'hABCD1234;
+    $display("a = %h", data.a);
+    $display("b = %h", data.b);
+  end
+endmodule
+
+
+
+//OUTPUT//
+xcelium> run
+a = abcd1234
+b = 34
