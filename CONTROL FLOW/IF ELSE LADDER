@@ -1,0 +1,18 @@
+module test;
+  int marks = 75;
+  initial begin
+    if (marks >= 90)
+      $display("Grade A");
+    else if (marks >= 70)
+      $display("Grade B");
+    else if (marks >= 50)
+      $display("Grade C");
+    else
+      $display("Fail");
+  end
+endmodule
+
+
+/OUTPUT//
+xcelium> run
+Grade B
