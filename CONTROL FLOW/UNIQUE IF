@@ -1,0 +1,13 @@
+module test;
+  int a = 5;
+  initial begin
+    unique if (a == 5)
+      $display("Five");
+    else if (a == 6)
+      $display("Six");
+  end
+endmodule
+
+//OUTPUT//
+xcelium> run
+Five
