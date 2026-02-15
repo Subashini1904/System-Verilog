@@ -1,0 +1,17 @@
+module test;
+  int a = 7;
+  initial begin
+    unique0 if (a == 5)
+      $display("Five");
+    else if (a == 6)
+      $display("Six");
+  end
+endmodule
+
+//OUTPUT//
+xcelium> source /xcelium25.03/tools/xcelium/files/xmsimrc
+xcelium> run
+xmsim: *W,RNQUIE: Simulation is complete.
+
+
+NO CONDITION IS TRUE------> NO ERROR
