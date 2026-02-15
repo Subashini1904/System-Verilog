@@ -1,0 +1,15 @@
+module test;
+  int num = 2;
+  initial begin
+    case (num)
+      1: $display("One");
+      2: $display("Two");
+      3: $display("Three");
+      default: $display("Invalid");
+    endcase
+  end
+endmodule
+
+//OUTPUT//
+xcelium> run
+Two
