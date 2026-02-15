@@ -1,0 +1,20 @@
+module typedef_struct;
+  typedef struct {
+    int id;
+    bit [7:0]marks;
+  } student_t;
+  student_t s1;
+  initial begin
+    s1.id=101;
+    s1.marks=8'd85;
+    $display("Student ID = %0d", s1.id);
+    $display("Student Marks = %0d", s1.marks);
+  end
+endmodule
+
+
+//OUTPUT//
+xcelium> run
+Student ID    = 101
+Student Marks = 85
+
