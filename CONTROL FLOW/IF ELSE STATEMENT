@@ -1,0 +1,13 @@
+module test;
+  int a = 3;
+  initial begin
+    if (a > 5)
+      $display("a is greater than 5");
+    else
+      $display("a is less than or equal to 5");
+  end
+endmodule
+
+//OUTPUT//
+xcelium> run
+a is less than or equal to 5
