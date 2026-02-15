@@ -1,0 +1,17 @@
+module test;
+  int a = 10;
+  initial begin
+    priority if (a > 5)
+      $display("Greater than 5");
+    else if (a > 8)
+      $display("Greater than 8");
+  end
+endmodule
+
+
+//OUTPUT//
+xcelium> run
+Greater than 5
+
+
+Even though both true, first condition executes.
