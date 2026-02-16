@@ -1,0 +1,15 @@
+module test;
+  initial begin
+    repeat (5) begin
+      $display("Hello");
+    end
+  end
+endmodule
+
+//OUTPUT//
+xcelium> run
+Hello
+Hello
+Hello
+Hello
+Hello
