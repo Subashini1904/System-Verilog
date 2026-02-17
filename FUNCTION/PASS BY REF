@@ -1,0 +1,19 @@
+module test;
+  function  void modify(ref int a, input int b);
+    a = a+10;   
+    b = b+10;  
+  endfunction
+  initial begin
+    int x = 5;
+    int y = 5;
+    modify(x, y);
+    $display("x = %0d",x);
+    $display("y = %0d",y);
+  end
+endmodule
+
+
+//OUTPUT//
+x = 15
+y = 5
+           
