@@ -1,0 +1,34 @@
+module test;
+  function int static_counter();
+    int count = 0;
+    count++;
+    return count;
+  endfunction
+  
+  function automatic int auto_counter();
+    int count = 0;
+    count++;
+    return count;
+  endfunction
+
+  initial begin
+    $display("Static Call1 = %0d", static_counter());
+    $display("Static Call2 = %0d", static_counter());
+    $display("Static Call3 = %0d", static_counter());
+
+    $display("Auto Call1 = %0d", auto_counter());
+    $display("Auto Call2 = %0d", auto_counter());
+    $display("Auto Call3 = %0d", auto_counter());
+  end
+endmodule
+
+
+
+//OUTPUT//
+Static Call1 = 1
+Static Call2 = 2
+Static Call3 = 3
+Auto Call1 = 1
+Auto Call2 = 1
+Auto Call3 = 1
+           V C S   S i m u l a t i o n   R e p o r t 
