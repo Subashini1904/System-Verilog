@@ -1,0 +1,17 @@
+module test;
+  int arr[];
+  initial begin
+    arr = new[3];
+    arr = '{5,15,25};
+    foreach (arr[i]) begin
+      $display("arr[%0d] = %0d", i, arr[i]);
+    end
+  end
+endmodule
+
+
+//OUTPUT//
+xcelium> run
+arr[0] = 5
+arr[1] = 15
+arr[2] = 25
