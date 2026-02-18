@@ -1,0 +1,19 @@
+module test;
+  task automatic counter();
+    int i = 0;   
+    i = i + 1;
+    $display("Value of i = %0d", i);
+  endtask
+  initial begin
+    counter();
+    counter();
+    counter();
+  end
+endmodule
+
+
+//OUTPUT//
+Value of i = 1
+Value of i = 1
+Value of i = 1
+          
