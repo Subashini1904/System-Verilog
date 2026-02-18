@@ -1,0 +1,16 @@
+module test;
+  function int add(input int a,input int b);
+    return a + b;
+  endfunction
+  task display_sum(input int x,input int y);
+    int result;
+    result = add(x, y);   
+    $display("Sum = %0d", result);
+  endtask
+  initial begin
+    display_sum(10,20);
+  end
+endmodule
+
+//OUTPUT//
+Sum = 30
