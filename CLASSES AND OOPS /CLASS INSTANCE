@@ -1,0 +1,21 @@
+class car;
+  string brand;
+  int speed;
+  function void display();
+    $display("Brand = %s, Speed = %0d", brand, speed);
+  endfunction
+endclass
+module test;
+  initial begin
+    car c1;        
+    c1 = new();    
+    c1.brand = "BMW";
+    c1.speed = 120;
+    c1.display();  
+  end
+endmodule
+
+
+
+//OUTPUT//
+Brand = BMW, Speed = 120
