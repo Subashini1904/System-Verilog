@@ -1,0 +1,22 @@
+class parent;
+  virtual function void display();
+    $display("This is Parent class");
+  endfunction
+endclass
+class child extends parent;
+  function void display();
+    $display("This is Child class");
+  endfunction
+endclass
+module test;
+  parent p;
+  child c;
+  initial begin
+    c = new();
+    p = c;    
+    p.display();  
+  end
+endmodule
+
+//OUTPUT//
+This is Child class
